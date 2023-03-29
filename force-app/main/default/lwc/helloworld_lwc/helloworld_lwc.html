@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="HelloWorld" icon-name="custom:custom14">
+      <div class="slds-m-around_medium">
+        <lightning-card title="my new lwc" icon-name="custom:custom4">
+
+        <lightning-layout vertical-align="center">
+          <lightning-layout-item padding="around-small">
+            <lightning-formatted-text value={name}></lightning-formatted-text>
+
+          </lightning-layout-item>
+          <lightning-layout-item padding="around-small">
+            <lightning-formatted-text value={title}></lightning-formatted-text>
+
+          </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout vertical-align="center">
+          <lightning-layout-item padding="around-small">
+            <lightning-button label="call JS" variant="brand" onclick={handleClick}></lightning-button>
+          </lightning-layout-item>
+        </lightning-layout>
+        </lightning-card>
+        <p>Hello, {greeting}!</p>
+        <lightning-input
+          label="Name"
+          value={greeting}
+          onchange={changeHandler}
+        ></lightning-input>
+        <template for:each={contacts} for:item="item" for:index="index"></template>
+      </div>
+    </lightning-card>
+  </template>

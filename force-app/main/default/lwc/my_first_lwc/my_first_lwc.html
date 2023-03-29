@@ -1,0 +1,28 @@
+<template>
+   <!-- Data Binding -->
+    <lightning-card  title="Data Binding">
+        <div class="slds-m-around_medium">
+
+        <div>Hello {name}</div>
+        <lightning-input type="text" label="Enter your age" onkeyup={changeHandler}></lightning-input>
+        <div>{name} has a  {age} boy!</div>
+    </div>         
+        </lightning-card>
+        <!-- Track decorator -->
+        <lightning-card  title="Track Decorator">
+            <div class="slds-m-around_medium">
+    
+            <div>Hello {name}</div>
+            <lightning-input type="text" label="Enter your district" onkeyup={changeDistrict}></lightning-input>
+            <div>{name} lives in this {address.district} district!</div>
+        </div>         
+            </lightning-card>
+    
+            <!-- Getter method -->
+            <lightning-card  title="Getter Method">
+                <div class="slds-m-around_medium">
+                <div>First User is {getUser}</div>
+                <div>The addition of {num1} and {num2} is {getSum}</div>
+            </div>         
+                </lightning-card>
+</template>
