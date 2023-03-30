@@ -1,0 +1,17 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+        <div class="slds-var-p-around_medium">
+            <lightning-input type="checkbox" variant="standard"  label="Show Password" onchange={changeHandler}></lightning-input>
+
+            <div class="slds-var-m-vertical_medium userInfo">
+                <template if:true={isinVisible}>
+                    My Password is JayaHeyyy
+                </template>
+                <template if:false={isinVisible}>
+                    My Password is *********
+                </template>
+
+            </div>
+        </div>
+    </lightning-card>
+</template>
