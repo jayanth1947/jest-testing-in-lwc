@@ -1,0 +1,10 @@
+<template>
+    <template if:true={userDetail}>
+        
+                <div class="userName">{userDetail.Name}</div>
+
+        <template if:false={userDetail}>
+            <p>No user Data Available</p>
+        </template>
+    </template>
+</template>
