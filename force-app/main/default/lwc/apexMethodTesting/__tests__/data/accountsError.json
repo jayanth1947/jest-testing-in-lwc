@@ -1,0 +1,10 @@
+[
+    {
+        "body":{
+            "message":"Am internal server error "
+        },
+        "ok":false,
+        "status":400,
+        "statusText":"Not Found"
+    }
+]
